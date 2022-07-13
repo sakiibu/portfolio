@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Tangerine', cursive;
+    color: #707070;
+    font-size: 1.25rem;
+    line-height: 1.75;
+}
+
+/* section */
+.section-inner{
+    margin: 20px;
+    border-radius: 30px;
+    padding-bottom: 18px;
+    
+}
+
+.section-inner.__profile{
+    background: linear-gradient(to top right, #fff ,#BED2E1);
+}
+
+.section-inner.__skill{
+    background: linear-gradient(to top right, #BEE1DA ,#fff);
+}
+
+.section-inner.__works{
+    background: linear-gradient(to top right, #fff ,#DEE1BE);
+}
+
+.section-inner.__contact{
+    background: linear-gradient(to top right, #E1D0BE ,#fff);
+}
+
+.section-title{
+    padding: 20px 0 10px;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+/* button */
+.button{
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px dotted #707070;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.button a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.__works .button:hover{
+    background-color: #ffffff;
+}
+
+/* header */
+
+.header{
+    background-color: #B3C9E3;
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-nav{
+    width: 100%;
+    height: 100%;
+}
+
+.header-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-item{
+    width: 48%;
+    text-align: center;
+    border: 1px dotted #707070;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.header-item:hover{
+    background-color: aliceblue;
+}
+
+.header-link{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* main */
+/* mainvisual */
+.mainvisual{
+    width: 100%;
+    height: 260px;
+    position: relative;
+}
+
+.main-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.25rem;
+}
+
+.mainvisual-box{
+    width: 100%;
+    height: 100%;
+}
+
+.mainvisual-image{
+    object-fit: cover;
+}
+
+/* profile */
+.profile-img-box{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-text{
+    padding: 18px 20px 0;
+    font-size: 1rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* skill */
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-icon{
+    width: 160px;
+    height: 160px;
+}
+
+.skill-name{
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+
+/* works */
+.works-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 18px;
+}
+
+.works-item{
+    background-color: #707070;
+    width: 160px;
+    height: 160px;
+}
+
+.works-item a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+/* contact */
+.contact-link-box{
+    width: 160px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.contact-link-box:hover{
+    opacity: .5;
+}
+
+.twitter-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-text{
+    padding: 18px 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.twitter-link{
+    display: inline-block;
+    width: 100%;
+}
+
+/* footer */
+.footer{
+    height: 60px;
+    background-color: #B3C9E3;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+
+
+
+/* mediaquery */
+
+@media screen and (min-width:520px) {
+    .header{
+        font-size: 2.0rem;
+    }
+    .header-list{
+        flex-wrap: nowrap;
+    }
+    .header-item{
+        width: 24%;
+        border-radius: 40px;
+    }
+
+    .main-title{
+        font-size: 3.25rem;
+    }
+
+    .section-title{
+        padding: 44px 0 16px;
+        font-size: 2.75rem;
+    }
+
+    .profile-img-box{
+        width: 270px;
+        height: 270px;
+    }
+
+    .profile-text{
+        width: 60%;
+        margin: 0 auto;
+        padding: 18px 0px;
+    }
+
+    .skill-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .works-list{
+        flex-direction: row;
+    }
+
+    .works-item{
+        width: 180px;
+        height: 180px;
+    }
+        
+}
