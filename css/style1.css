@@ -432,6 +432,7 @@ left: 0;
 /* map */
 .map{
     height: 250px;
+    width: 100%;
 }
 /* footer */
 .footer{
