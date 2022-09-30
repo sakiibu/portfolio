@@ -512,7 +512,7 @@ body{
 
 /* eyecatch */
 .eyecatch{
-    background-image: url(../img/kv-img-sp.png);
+    background-image: url(../img/work2img/kv-img-sp.png);
     background-position: 60%;
     background-size: cover;
     height: 100vh;
@@ -541,7 +541,7 @@ body{
 }
 @media screen and (min-width:960px) {
     .eyecatch{
-        background-image: url(../img/kv-img-pc.jpg);
+        background-image: url(../img/work2img/kv-img-pc.jpg);
         background-position: center;
         height: 755px;
         position: relative;
